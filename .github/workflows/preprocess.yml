@@ -5,7 +5,7 @@ on:
     paths:
       - 'lung_cancer_raw.csv'
       - 'preprocessing/automate_dewi.py'
-      - '.github/workflows/preprocessing.yml'
+      - '.github/workflows/preprocess.yml'
 
 jobs:
   preprocess:
@@ -18,7 +18,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'
+        python-version: '3.12.7'
 
     - name: Install dependencies
       run: |
